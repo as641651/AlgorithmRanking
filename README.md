@@ -46,8 +46,9 @@ The jupyter notebook runs on port 8888
 Run Jupyter notebook (inside the container). 
 
 ```bash
-jupyter-notebook --ip=0.0.0.0 --allow-root
+jupyter notebook --ip 0.0.0.0 --port 8888 --no-browser --allow-root
 ```
+for windows OS write the following in the browser: [IP of the machine]:8888
 
 ## Usage
 

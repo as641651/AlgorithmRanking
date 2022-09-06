@@ -30,12 +30,18 @@ Build image:
 ```bash
 docker build -t [IMAGE_NAME] .
 ```
-Map the ports for jupyter noteboon and the current working directory to the container, and Run the image
+Map the ports for jupyter notebook and the current working directory to the container, and Run the image
 
+Linux version
 ```bash
- docker run -it -p 0.0.0.0:8005:8888 -v ${1:-$PWD}:/home/user [IMAGE_NAME]
+ docker run -it -p 0.0.0.0:8888:8888 -v ${1:-$PWD}:/home/user [image_name:version]
 ```
-The jupyter notebook runs on port 8005
+Windows version
+```bash
+ docker run -it -p 8888:8888 -v /c/users/[the directory where you stored the image files]:/home/user [image_name:version]
+```
+
+The jupyter notebook runs on port 8888
 
 Run Jupyter notebook (inside the container). 
 

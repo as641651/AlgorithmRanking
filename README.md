@@ -36,14 +36,13 @@ Linux version
 ```bash
  docker run -it -p [host port]:[container port] -v ${1:-$PWD}:/home/user [image_name:version]
 ```
-host port = 0.0.0.0:9023
-container port = 8023
+in which host port is 0.0.0.0:9023 and container port is 8023
+
 Windows version 
 ```bash
  docker run -it -p [host port]:[container port] -v /c/users/[the directory where you stored the image files]:/home/user [image_name:version]
 ```
-host port = 9023
-container port = 8023
+in which host port is 9023 and container port is 8023
 
 The jupyter notebook runs on port 8888
 

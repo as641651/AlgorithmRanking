@@ -44,12 +44,12 @@ Windows version
 ```
 in which host port is 9023 and container port is 8023
 
-The jupyter notebook runs on port 8888
+The jupyter notebook runs on port 9023
 
 Run Jupyter notebook (inside the container). 
 
 ```bash
-jupyter notebook --ip 0.0.0.0 --port 8888 --no-browser --allow-root
+jupyter notebook --ip 0.0.0.0 --port 9023 --no-browser --allow-root
 ```
 for windows OS write the following in the browser: [IP of the machine]:8888
 The IP of your machine is printed when opening Docker toolbox Quickstart command line.

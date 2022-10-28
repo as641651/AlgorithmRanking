@@ -42,8 +42,9 @@ Windows version
 ```
 example:
 
+if image port = 0.0.0.0:9023 , container port = 8023 , image directory = Users/PycharmProjects/PA4Algs/AlgorithmRanking, image name = ranking
+
 ```bash
-image port = 0.0.0.0:9023 , container port = 8023 , image directory = Users/PycharmProjects/PA4Algs/AlgorithmRanking, image name = ranking
 docker run -it -p 0.0.0.0:8005:8888 -v /c/Users/PycharmProjects/PA4Algs/AlgorithmRanking:/home/user ranking
 ```
 

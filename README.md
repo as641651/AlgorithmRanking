@@ -34,15 +34,15 @@ Map the ports for jupyter notebook and the current working directory to the cont
 
 Linux version
 ```bash
- docker run -it -p [host port]:[container port] -v ${1:-$PWD}:/home/user [image_name:version]
+ docker run -it -p [port of container]:[port of the notebook] -v ${1:-$PWD}:/home/user [image_name:version]
 ```
 Windows version 
 ```bash
- docker run -it -p [host port]:[container port] -v /c/[the directory where image files are stored.]:/home/user [image_name:version]
+ docker run -it -p [ip of the machine]:[port of container]:[port of notebook] -v [the directory where image files are stored]:/home/user [image_name:version]
 ```
 example:
 
-host port = 0.0.0.0:8005 , container port = 8888 , image directory = Users/PycharmProjects/PA4Algs/AlgorithmRanking, image name = ranking
+ip of the machine = 0.0.0.0, port of container = 8005 , port of notebook = 8888 , image directory = /c/Users/PycharmProjects/PA4Algs/AlgorithmRanking, image name = ranking
 
 ```bash
 docker run -it -p 0.0.0.0:8005:8888 -v /c/Users/PycharmProjects/PA4Algs/AlgorithmRanking:/home/user ranking
@@ -53,7 +53,7 @@ Run Jupyter notebook inside the container.
 ```bash
 jupyter notebook --ip 0.0.0.0 --no-browser --allow-root
 ```
-for windows OS write the following in the browser: [IP of the machine]:[host port]
+for windows OS write the following in the browser: [IP of the machine]:[port of container]
 
 The IP of your machine is printed when opening Docker toolbox Quickstart command line(in case of using docker toolbox).
 

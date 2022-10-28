@@ -42,10 +42,10 @@ Windows version
 ```
 example:
 
- port of container = 8005 , port of notebook = 8888 , image directory = /c/Users/PycharmProjects/PA4Algs/AlgorithmRanking, image name = ranking
+ port of container = 8005 , port of notebook = 8888 , image directory = /c/Users/Projects/AlgorithmRanking, image name = ranking
 
 ```bash
-docker run -it -p 0.0.0.0:8005:8888 -v /c/Users/PycharmProjects/PA4Algs/AlgorithmRanking:/home/user ranking
+docker run -it -p 0.0.0.0:8005:8888 -v /c/Users/Projects/AlgorithmRanking:/home/user ranking
 ```
 
 

@@ -53,7 +53,9 @@ Run Jupyter notebook inside the container.
 ```bash
 jupyter notebook --ip 0.0.0.0 --no-browser --allow-root
 ```
-for windows OS write the following in the browser: localhost:[port of container]
+for windows OS write the following command in the browser: localhost:[port of container]
+
+incase the above line did not work in windows then write the following command in the browser: [ip of the machine]:[port of container]
 
 The IP of your machine is printed when opening Docker toolbox Quickstart command line(in case of using docker toolbox).
 

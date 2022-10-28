@@ -42,7 +42,7 @@ Windows version
 ```
 example:
 
-if image port = 0.0.0.0:9023 , container port = 8023 , image directory = Users/PycharmProjects/PA4Algs/AlgorithmRanking, image name = ranking
+if image port = 0.0.0.0:8005 , container port = 8888 , image directory = Users/PycharmProjects/PA4Algs/AlgorithmRanking, image name = ranking
 
 ```bash
 docker run -it -p 0.0.0.0:8005:8888 -v /c/Users/PycharmProjects/PA4Algs/AlgorithmRanking:/home/user ranking
@@ -51,7 +51,7 @@ docker run -it -p 0.0.0.0:8005:8888 -v /c/Users/PycharmProjects/PA4Algs/Algorith
 
 Run Jupyter notebook inside the container. 
 ```bash
-jupyter notebook --ip 0.0.0.0 --port 9023 --no-browser --allow-root
+jupyter notebook --ip 0.0.0.0 --no-browser --allow-root
 ```
 for windows OS write the following in the browser: [IP of the machine]:[container port]
 

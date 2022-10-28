@@ -36,24 +36,22 @@ Linux version
 ```bash
  docker run -it -p [host port]:[container port] -v ${1:-$PWD}:/home/user [image_name:version]
 ```
-in which host port is 0.0.0.0:9023 and container port is 8023
-
 Windows version 
 ```bash
- docker run -it -p [host port]:[container port] -v /c/users/[the directory where you stored the image files]:/home/user [image_name:version]
+ docker run -it -p [host port]:[container port] -v /c/Users/[the directory where image files are stored.]:/home/user [image_name:version]
 ```
-in which host port is 9023 and container port is 8023
+example:
+image port = 0.0.0.0:9023
+container port = 8023
 
-The jupyter notebook runs on port 9023
 
-Run Jupyter notebook (inside the container). 
-
+Run Jupyter notebook inside the container. 
 ```bash
 jupyter notebook --ip 0.0.0.0 --port 9023 --no-browser --allow-root
 ```
-for windows OS write the following in the browser: [IP of the machine]:9023
+for windows OS write the following in the browser: [IP of the machine]:[container port]
 
-The IP of your machine is printed when opening Docker toolbox Quickstart command line.
+The IP of your machine is printed when opening Docker toolbox Quickstart command line(in case of using docker toolbox).
 
 ## Usage
 

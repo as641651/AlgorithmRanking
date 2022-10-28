@@ -38,11 +38,13 @@ Linux version
 ```
 Windows version 
 ```bash
- docker run -it -p [host port]:[container port] -v /c/Users/[the directory where image files are stored.]:/home/user [image_name:version]
+ docker run -it -p [host port]:[container port] -v /c/[the directory where image files are stored.]:/home/user [image_name:version]
 ```
 example:
-image port = 0.0.0.0:9023
-container port = 8023
+'''bash
+image port = 0.0.0.0:9023 , container port = 8023 , image directory = Users/PycharmProjects/PA4Algs/AlgorithmRanking, image name = ranking
+docker run -it -p 0.0.0.0:8005:8888 -v /c/Users/PycharmProjects/PA4Algs/AlgorithmRanking:/home/user ranking
+'''
 
 
 Run Jupyter notebook inside the container. 
